@@ -1,0 +1,109 @@
+body {
+    background-color: #EBFAFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Segeo UI;
+    font-size: 17px;
+    font-weight: regular;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    padding: 20px 1%;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 75px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-link {
+    list-style: none;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    display: inline-block;
+    padding: 50px 0px -0%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 30px;
+}
+
+.navbar a {
+    font-size: 1.1rem;
+}
+
+i {
+    display: inline-block;
+    width: 24px;
+    height: 70px;
+}
+
+.titulo {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 55px;
+    padding: 0 30px;
+    line-height: 2;
+}
+
+.descripcion {
+    font-family: "Segoe UI Light", sans-serif;
+    color: gray;
+    font-size: 25px;
+    margin-top: -25px;
+    padding: 0 30px;
+    font-style: italic;
+}
+
+/* Estilo para ambos botones */
+.button-container {
+    margin-top: 35px; /* Ajusta este valor para mover el botón hacia arriba */
+    margin-left: 32px; /* Ajusta el margen izquierdo para mover hacia la derecha */
+}
+
+.button-common {
+
+    padding: 15px 80px; /* Ajusta el valor del padding para aumentar el tamaño del botón */
+    display: flex;
+    transition: box-shadow 0.5s;
+    background-color: white; /* Cambia el color de fondo a blanco */
+    width: auto; /* Restablece el ancho automático para que el botón se ajuste al contenido */
+    color: black; /* Cambia el color del texto a gris */
+    font-size: 20px; /* Ajusta el tamaño de fuente */
+    border-radius: 10px; /* Agrega esquinas redondeadas */
+}
+
+.button-common:hover {
+    color: crimson;
+    box-shadow: 0 15px 16px rgba(0, 0, 0, 0.3); /* Aumenta el desplazamiento y la difuminación para una sombra más pronunciada */
+}
