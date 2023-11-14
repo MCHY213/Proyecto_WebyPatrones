@@ -1,0 +1,13 @@
+package Proyecto_Web_Patrones;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ProyectoApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
