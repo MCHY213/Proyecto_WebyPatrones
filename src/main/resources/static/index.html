@@ -9,6 +9,13 @@
         <link href="static.css/styles.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/estilo.css">
 
+        <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/js/rutinas.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,31 +31,49 @@
             </div>
             <nav>
                 <ul class="navbar">
-                    <li><a href="parlante.html" class="nav-link">Parlantes</a></li>
-                    <li><a href="" class="nav-link"> Audifonos</a></li>
-                    <li><a href="" class="nav-link"> Reparaciones</a></li>
+                    <li><a href="items/parlante.html" class="nav-link">Parlantes</a></li>
+                    <li><a href="items/audifono.html" class="nav-link"> Audifonos</a></li>
+                    <li><a href="items/reparacion.html" class="nav-link"> Reparaciones</a></li>
                 </ul>
             </nav>
             <div class="main">
-                <a href="whatsapp.html" class="whatsapp"><i class="ri-whatsapp-fill"></i></a>
-                <a href="facebook.html" class="facebook"><i class="ri-facebook-box-fill"></i></a>
-                <a href="instagram.html" class="instagram"><i class="ri-instagram-line"></i></a>
-                <a href="cuenta.html" class="user"><i class="ri-user-fill"></i></a>
-                <a href="categoria.html" class="search"><i class="ri-search-2-line"></i></a>
-                <a href="carrito.html" class="shopping-cart"><i class="ri-shopping-cart-2-line"></i></a>
-                <a href="#" class="motorbike"><i class="ri-motorbike-line"></i></a>
-                <a href="#" class="shopping-bag"><i class="ri-shopping-bag-3-line"></i></a>
+                <a href="socialmedia/whatsapp.html" class="whatsapp"><i class="ri-whatsapp-fill"></i></a>
+                <a href="socialmedia/facebook.html" class="facebook"><i class="ri-facebook-box-fill"></i></a>
+                <a href="socialmedia/instagram.html" class="instagram"><i class="ri-instagram-line"></i></a>
+                <a href="account/cuenta.html" class="user"><i class="ri-user-fill"></i></a>
+                <a href="cart/carrito.html" class="shopping-cart"><i class="ri-shopping-cart-2-line"></i></a>
+                <a href="bag/entrega.html" class="motorbike"><i class="ri-motorbike-line"></i></a>
+                <a href="payment/pago.html" class="shopping-bag"><i class="ri-shopping-bag-3-line"></i></a>
             </div>
+            
         </header>
 
+<!--        agregar esto en parlantes.html osea en los articulos -->
+        
+<!--        <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+            <div class="container">
+                <a th:href="@{/}" class="navbar-brand">Vehiculo</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2"><a class="nav-link" th:href="@{/vehiculo/listado}">Listas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>-->
+        
         <section>
             <h1 class="text-h1">BIENVENIDOS</h1>
             <h2 class="text-h2">Empieza lo bueno</h2>
-            
+
             <button>
-                <a href="categoria.html"><span class="button" style="font-size: 20px; color: black;">COMPRAR AHORA</span></a>
+                <a><span class="button" style="font-size: 20px; color: black;">COMPRAR AHORA</span></a>
             </button>
         </section>  
+
+
         <footer>
             Grupo #2 &COPY;
         </footer>
