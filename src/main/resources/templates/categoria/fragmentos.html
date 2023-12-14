@@ -54,7 +54,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-outline-primary">Guardar</button>
+                                <button type="submit" class="btn btn-outline-primary">Guardar</button>
                             </div>
                         </form>
                     </div>
@@ -158,21 +158,21 @@
 
         <!-- 5 Fragmento que se utiliza en el fragmento anterior -->
         <section th:fragment="botonesEditar">
-            <div class="container py-4 mb-4 bg-light">
+            <div class="container py-4 mb-4">
                 <div class="row">
                     <div class="col-md-4 d-grid">
-                        <a th:href="@{/categoria/listado}" type="button" class="btn btn-outline-info">
+                        <a th:href="@{/categoria/listado}" type="submit" class="btn btn-outline-info">
                             <i class="fas fa-arrow-left"></i> [[#{accion.regresar}]]
                         </a>
                     </div>
                     <div class="col-md-4 d-grid">                                
                         <a th:href="@{/categoria/eliminar/}+${categoria.idCategoria}"
-                           type="button" class="btn btn-outline-danger">
+                           type="submit" class="btn btn-outline-danger">
                             <i class="fas fa-trash"></i> [[#{accion.eliminar}]]
                         </a>
                     </div>
                     <div class="col-md-4 d-grid">
-                        <button type="button" class="btn btn-outline-success">
+                        <button type="submit" class="btn btn-outline-success">
                             <i class="fas fa-check"></i> [[#{accion.guardar}]]
                         </button>
                     </div>

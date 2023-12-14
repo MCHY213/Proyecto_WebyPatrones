@@ -78,8 +78,8 @@ DEFAULT CHARACTER SET = utf8mb4;
 /*Se insertan 3 registros en la tabla cliente como ejemplo */
 INSERT INTO keji.usuario (id_usuario, username,password,nombre, apellidos, correo, telefono,ruta_imagen,activo) VALUES 
 (1,'mario','$2a$10$P1.w58XvnaYQUQgZUCk4aO/RTRl8EValluCqB3S2VMLTbRt.tlre.','Mario', 'Chen',    'mario@gmail.com',    '4556-8978', 'https://live.staticflickr.com/3729/9314860865_0e4ec242f7_b.jpg',true),
-(2,'jeff','$2a$10$GkEj.ZzmQa/aEfDmtLIh3udIH5fMphx/35d0EYeqZL5uzgCJ0lQRi','Jeff',  'Cordoba', 'jeff@gmail.com', '5456-8789','https://upload.wikimedia.org/wikipedia/commons/0/06/Photo_of_Rebeca_Arthur.jpg',true),
-(3,'thony','$2a$10$koGR7eS22Pv5KdaVJKDcge04ZB53iMiw76.UjHPY.XyVYlYqXnPbO','Thony', 'Rodriguez',     'thony@gmail.com',      '7898-8936','https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Eduardo_de_Pedro_2019.jpg/480px-Eduardo_de_Pedro_2019.jpg?20200109230854',true);
+(2,'jeff','$2a$10$GkEj.ZzmQa/aEfDmtLIh3udIH5fMphx/35d0EYeqZL5uzgCJ0lQRi','Jeff',  'Cordoba', 'jeff@gmail.com', '5456-8789','https://t2.ea.ltmcdn.com/es/razas/9/0/5/rana-arboricola-verde_509_0_600.jpg',true),
+(3,'thony','$2a$10$koGR7eS22Pv5KdaVJKDcge04ZB53iMiw76.UjHPY.XyVYlYqXnPbO','Thony', 'Rodriguez',     'thony@gmail.com',      '7898-8936','https://t2.ea.ltmcdn.com/es/razas/9/0/5/rana-arboricola-verde_509_0_600.jpg',true);
 
 /*Se insertan 3 categorias de productos como ejemplo */
 INSERT INTO keji.categoria (id_categoria,descripcion,ruta_imagen,activo) VALUES 
@@ -101,10 +101,10 @@ INSERT INTO keji.producto (id_producto,id_categoria,descripcion,detalle,precio,e
 (10,2,'Sony Audifonos Marques 5','Mejor Transparecy Mode del Mundo',15000,2,'https://www.radioshackcr.com/4681-large_default/audifonos-sony-wh-1000xm4bm-over-the-head.jpg',true),
 (11,2,'Bose 700','Mejor Experiencia Vivida',25400,5,'https://www.icon.co.cr/wp-content/uploads/2020/12/Audifono-Bose-700-bluetooth-negro_1_iCon.jpg',true),
 (12,3,'iPhone 15 Pro Max','Mejor Chip de Telefonos',45000,3,'https://avenidatecnologica.com/wp-content/uploads/2023/05/Apple-iPhone-15-Pro-lineup-color-lineup-geo-230912_big.jpg.large_.jpg',true),
-(13,3,'iPhone 15','Mejores Colores en un Telefono',285000,0,'https://images.ecestaticos.com/LqLdwn_Py7Ie90v09FaG1np6WSE=/120x0:983x647/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F702%2F227%2F817%2F702227817072f5f19511f9a908fa74b3.jpg',true),
-(14,3,'Xiaomi Redmi Note 8 Pro','Mejor Camara de Telefono',154000,0,'https://img.gkbcdn.com/p/2019-08-29/xiaomi-redmi-note-8-pro-6-53-inch-8gb-128gb-green-1574132598513._w500_p1_.jpg',true),
-(15,3,'Xiaomi Redmi Note 9 Pro','Mejor Resolucion de Pantalla',330000,0,'https://ss632.liverpool.com.mx/xl/1114878461.jpg',true),
-(16,3,'Xiaomi x45','Mejor Resoluicion',273000,0,'https://www.trustedreviews.com/wp-content/uploads/sites/54/2022/03/20220315_104812-1-scaled.jpg',true);
+(13,3,'iPhone 15','Mejores Colores en un Telefono',285000,4,'https://images.ecestaticos.com/LqLdwn_Py7Ie90v09FaG1np6WSE=/120x0:983x647/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F702%2F227%2F817%2F702227817072f5f19511f9a908fa74b3.jpg',true),
+(14,3,'Xiaomi Redmi Note 8 Pro','Mejor Camara de Telefono',154000,5,'https://img.gkbcdn.com/p/2019-08-29/xiaomi-redmi-note-8-pro-6-53-inch-8gb-128gb-green-1574132598513._w500_p1_.jpg',true),
+(15,3,'Xiaomi Redmi Note 9 Pro','Mejor Resolucion de Pantalla',330000,2,'https://ss632.liverpool.com.mx/xl/1114878461.jpg',true),
+(16,3,'Xiaomi x45','Mejor Resoluicion',273000,1,'https://www.trustedreviews.com/wp-content/uploads/sites/54/2022/03/20220315_104812-1-scaled.jpg',true);
 
 /*Se crean 6 facturas */   /*'Activa','Pagada','Anulada')*/
 INSERT INTO keji.factura (id_factura,id_usuario,fecha,total,estado) VALUES
