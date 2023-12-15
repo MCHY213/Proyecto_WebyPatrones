@@ -84,16 +84,16 @@
         </section>
 
         <!-- 3 SecciÃ³n principal para mostrar la informaccion de la entidad usuario -->
-        <section th:fragment="listadoUsuarios" id="usuarios">
+        <section  style="color: darkblue; font-family: monospace; padding-left: 500px"th:fragment="listadoUsuarios" id="usuarios">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-7">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header" style="background:burlywood">
                                 <h4>[[#{usuario.listado}]]</h4></div>
                             <div th:if="${usuarios != null and !usuarios.empty}">
-                                <table class="table table-striped table-hover">
-                                    <thead class="table-dark">
+                                <table class="table table-striped table-hover" >
+                                    <thead class="table-dark" >
                                         <tr><th>#</th>
                                             <th>[[#{usuario.username}]]</th>
                                             <th>[[#{usuario.nombre}]]</th>
@@ -142,35 +142,35 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="card">
-                                            <div class="card-header">
+                                            <div class="card-header " style="background: coral; color: azure">
                                                 <h4>[[#{accion.actualizar}]]</h4>
                                             </div>
-                                            <div class="card-body">
+                                            <div class="card-body" style="background: blanchedalmond">
                                                 <div class="mb-3">
-                                                    <label for="nombre">[[#{usuario.nombre}]]</label>
+                                                    <label for="nombre" style="color: darkblue; font-family: fantasy">[[#{usuario.nombre}]]</label>
                                                     <input type="text" class="form-control" 
                                                            name="nombre" th:field="*{nombre}"
                                                            required="true">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="apellidos">[[#{usuario.apellidos}]]</label>
+                                                    <label for="apellidos" style="color: darkblue; font-family: fantasy">[[#{usuario.apellidos}]]</label>
                                                     <input type="text" class="form-control" 
                                                            name="apellidos" th:field="*{apellidos}"
                                                            required="true">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="email">[[#{usuario.correo}]]</label>
+                                                    <label for="email" style="color: darkblue; font-family: fantasy">[[#{usuario.correo}]]</label>
                                                     <input type="email" class="form-control" 
                                                            name="correo" th:field="*{correo}"
                                                            required="true">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="telefono">[[#{usuario.telefono}]]</label>
+                                                    <label for="telefono" style="color: darkblue; font-family: fantasy">[[#{usuario.telefono}]]</label>
                                                     <input type="tel" class="form-control" 
                                                            name="telefono" th:field="*{telefono}">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="imagen">[[#{usuario.imagen}]]</label>
+                                                    <label for="imagen" style="color: darkblue; font-family: fantasy">[[#{usuario.imagen}]]</label>
                                                     <input class="form-control" type="file" name="imagenFile"
                                                            onchange="readURL(this);" />
                                                     <img id="blah" th:src="@{${usuario.rutaImagen}}" alt="your image" height="200"/>

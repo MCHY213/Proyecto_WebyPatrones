@@ -30,13 +30,13 @@
         <!-- 2 Sección principal para mostrar la informaccion de los productos seleccionados -->
         <section th:fragment="listadoProductos">
             <div class="row row-cols-4">
-                <div class="card p-3"  th:each="p : ${productos}">
+                <div style="text-align: center; font-family: fantasy; font-size: 18px; background: beige" class="card p-3 mt-4"  th:each="p : ${productos}">
                     <figure>
                         <img th:src="${p.rutaImagen}" 
                              class="card-img-top"
                              height="300"
                              alt="..."/>
-                        <figcaption>
+                        <figcaption style="text-align: center">
                             $ [[${p.precio}+' ('+${p.existencias}+')']]
                         </figcaption>
                     </figure>
@@ -53,19 +53,19 @@
         <!-- 3 Sección para mostrar los filtros a desarrollar -->
         <section th:fragment="filtros">
             <div class="row p-3">
-                <div class="col-md-3">
+                <div  style="width: 100%" class="col-md-4">
                     <form method="post"
                           th:action='@{/pruebas/query1}'>
-                        <div class='card'>
-                            <div class="card-header" style="text-align: center">
-                                [[#{pruebas.ampliadas}]]
+                        <div class='card' style="background:beige">
+                            <div class="card-header" style="text-align: center; color: black; font-family: fantasy; font-size: 30px">
+                                 [[#{pruebas.ampliadas}]]
                             </div>
-                            <div class="card-body">
-                                <div class="mb-3">
+                            <div class="card-body" style="text-align: center">
+                                <div class="mb-3" style="font-family: fantasy">
                                     <label for="precioInf">[[#{pruebas.precio.inferior}]]</label>
                                     <input type="number" class="form-control" name="precioInf" required="true"/>
                                 </div>
-                                <div class="mb-3">
+                                <div class="mb-3" style="font-family: fantasy">
                                     <label for="precioSup">[[#{pruebas.precio.superior}]]</label>
                                     <input type="number" class="form-control" name="precioSup" required="true"/>
                                 </div>
